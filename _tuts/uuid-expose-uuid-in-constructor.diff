@@ -1,0 +1,25 @@
+diff --git a/src/Entity/User.php b/src/Entity/User.php
+index ea7946393..4fb2a0fd5 100644
+--- a/src/Entity/User.php
++++ b/src/Entity/User.php
+@@ -55,6 +55,7 @@ class User implements UserInterface
+     /**
+      * @ORM\Column(type="uuid", unique=true)
+      * @ApiProperty(identifier=true)
++     * @Groups({"user:write"})
+      */
+     private $uuid;
+ 
+@@ -119,10 +120,10 @@ class User implements UserInterface
+      */
+     private $isMvp = false;
+ 
+-    public function __construct()
++    public function __construct(UuidInterface $uuid = null)
+     {
+         $this->cheeseListings = new ArrayCollection();
+-        $this->uuid = Uuid::uuid4();
++        $this->uuid = $uuid ?: Uuid::uuid4();
+     }
+ 
+     public function getId(): ?int

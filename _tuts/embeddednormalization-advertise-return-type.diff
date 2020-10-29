@@ -1,0 +1,12 @@
+diff --git a/src/Entity/User.php b/src/Entity/User.php
+index 72ee63b47..ebb15597f 100644
+--- a/src/Entity/User.php
++++ b/src/Entity/User.php
+@@ -210,6 +210,7 @@ class User implements UserInterface
+     /**
+      * @Groups({"user:read"})
+      * SerializedName("cheeseListings")
++     * @return Collection<CheeseListing>
+      */
+     public function getPublishedCheeseListings(): Collection
+     {

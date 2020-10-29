@@ -1,0 +1,20 @@
+diff --git a/src/Entity/User.php b/src/Entity/User.php
+index 4c07a81a0..f8a78f1cf 100644
+--- a/src/Entity/User.php
++++ b/src/Entity/User.php
+@@ -10,6 +10,7 @@ use App\Doctrine\UserSetIsMvpListener;
+ use Doctrine\Common\Collections\ArrayCollection;
+ use Doctrine\Common\Collections\Collection;
+ use Doctrine\ORM\Mapping as ORM;
++use Ramsey\Uuid\Uuid;
+ use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
+ use Symfony\Component\Security\Core\User\UserInterface;
+ use Symfony\Component\Serializer\Annotation\Groups;
+@@ -118,6 +119,7 @@ class User implements UserInterface
+     public function __construct()
+     {
+         $this->cheeseListings = new ArrayCollection();
++        $this->uuid = Uuid::uuid4();
+     }
+ 
+     public function getId(): ?int

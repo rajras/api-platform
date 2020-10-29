@@ -1,0 +1,34 @@
+diff --git a/config/services.yaml b/config/services.yaml
+index c9c5851a3..3bee7a408 100644
+--- a/config/services.yaml
++++ b/config/services.yaml
+@@ -37,6 +37,9 @@ services:
+     App\Doctrine\CheeseListingSetOwnerListener:
+         tags: [doctrine.orm.entity_listener]
+ 
++    App\Doctrine\UserSetIsMvpListener:
++        tags: [doctrine.orm.entity_listener]
++
+     App\DataPersister\UserDataPersister:
+         bind:
+             $decoratedDataPersister: '@api_platform.doctrine.orm.data_persister'
+diff --git a/src/Entity/User.php b/src/Entity/User.php
+index 70fd40faf..8edd76eb6 100644
+--- a/src/Entity/User.php
++++ b/src/Entity/User.php
+@@ -5,6 +5,7 @@ namespace App\Entity;
+ use ApiPlatform\Core\Annotation\ApiFilter;
+ use ApiPlatform\Core\Annotation\ApiResource;
+ use ApiPlatform\Core\Serializer\Filter\PropertyFilter;
++use App\Doctrine\UserSetIsMvpListener;
+ use Doctrine\Common\Collections\ArrayCollection;
+ use Doctrine\Common\Collections\Collection;
+ use Doctrine\ORM\Mapping as ORM;
+@@ -35,6 +36,7 @@ use Symfony\Component\Validator\Constraints as Assert;
+  * @ApiFilter(PropertyFilter::class)
+  * @UniqueEntity(fields={"username"})
+  * @UniqueEntity(fields={"email"})
++ * @ORM\EntityListeners({UserSetIsMvpListener::class})
+  * @ORM\Entity(repositoryClass="App\Repository\UserRepository")
+  */
+ class User implements UserInterface

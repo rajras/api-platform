@@ -1,0 +1,20 @@
+diff --git a/src/Entity/User.php b/src/Entity/User.php
+index ebb15597f..85f963e29 100644
+--- a/src/Entity/User.php
++++ b/src/Entity/User.php
+@@ -3,6 +3,7 @@
+ namespace App\Entity;
+ 
+ use ApiPlatform\Core\Annotation\ApiFilter;
++use ApiPlatform\Core\Annotation\ApiProperty;
+ use ApiPlatform\Core\Annotation\ApiResource;
+ use ApiPlatform\Core\Serializer\Filter\PropertyFilter;
+ use App\Doctrine\UserSetIsMvpListener;
+@@ -208,6 +209,7 @@ class User implements UserInterface
+     }
+ 
+     /**
++     * @ApiProperty(readableLink=true)
+      * @Groups({"user:read"})
+      * SerializedName("cheeseListings")
+      * @return Collection<CheeseListing>

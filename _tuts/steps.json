@@ -11,6 +11,11 @@
             "description": null
         },
         {
+            "id": "installation-upgrade-doctrine-annotations",
+            "name": "Installation: upgrade doctrine\/annotations",
+            "description": null
+        },
+        {
             "id": "installation-configure-db",
             "name": "Installation: configure db",
             "description": null
@@ -939,7 +944,1232 @@
             "id": "relation-fix-update-published-test",
             "name": "Relation: fix update published test",
             "description": null
+        },
+        {
+            "id": "pre-ep3-bumping-php-version-and-re-org-deps",
+            "name": "PRE_EP3: bumping php version and re-org deps",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-unpacking-apip-pack",
+            "name": "PRE_EP3: unpacking APIP pack",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-unpacking-profiler-test-packs",
+            "name": "PRE_EP3: unpacking profiler+test packs",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-updating-deps-to-sf5",
+            "name": "PRE_EP3: updating deps to Sf5",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-updating-to-migrations-3",
+            "name": "PRE_EP3: updating to Migrations 3",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-updating-repositories",
+            "name": "PRE_EP3: updating repositories",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-api-platform-recipe",
+            "name": "PRE_EP3: api-platform recipe",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-annotations-recipe",
+            "name": "PRE_EP3: annotations recipe",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-doctrinebundle-recipe",
+            "name": "PRE_EP3: DoctrineBundle recipe",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-nelmio-cors-recipe",
+            "name": "PRE_EP3: nelmio\/cors recipe",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-flex-recipe",
+            "name": "PRE_EP3: flex recipe",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-frameworkbundle-recipe",
+            "name": "PRE_EP3: frameworkbundle recipe",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-symfony-console-recipe",
+            "name": "PRE_EP3: symfony\/console recipe",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-symfony-routing-recipe",
+            "name": "PRE_EP3: symfony\/routing recipe",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-monolog-recipe",
+            "name": "PRE_EP3: monolog recipe",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-phpunit-bridge-recipe",
+            "name": "PRE_EP3: phpunit-bridge recipe",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-security-recipe",
+            "name": "PRE_EP3: security recipe",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-translation-recipe",
+            "name": "PRE_EP3: translation recipe",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-twig-recipe",
+            "name": "PRE_EP3: twig recipe",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-validator-recipe",
+            "name": "PRE_EP3: validator recipe",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-encore-recipe",
+            "name": "PRE_EP3: encore recipe",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-upgrade-yarn-deps",
+            "name": "PRE_EP3: upgrade yarn deps",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-modernizing-vue-app",
+            "name": "PRE_EP3: modernizing Vue app",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-api-platform-security-changes",
+            "name": "PRE_EP3: api platform security changes",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-emptying-tutorial",
+            "name": "PRE_EP3: emptying tutorial\/",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-using-core-test-classes",
+            "name": "PRE_EP3: using core test classes",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-fixing-small-deprecation",
+            "name": "PRE_EP3: fixing small deprecation",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-removing-auto-group-factory",
+            "name": "PRE_EP3: removing auto group factory",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-add-docker-compose-yaml",
+            "name": "PRE_EP3: add docker-compose.yaml",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-commit-webpack-assets",
+            "name": "PRE_EP3: commit webpack assets",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-disabling-deprecations-in-tests",
+            "name": "PRE_EP3: disabling deprecations in tests",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-install-doctrine-fixtures",
+            "name": "PRE_EP3: install doctrine fixtures",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-add-fixtures",
+            "name": "PRE_EP3: add fixtures",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-auto-fill-login",
+            "name": "PRE_EP3: auto-fill login",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-remove-using-owner-read",
+            "name": "PRE_EP3: remove using owner:read",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-improve-cheeselisting-test",
+            "name": "PRE_EP3: improve CheeseListing test",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-fix-item-query-extension",
+            "name": "PRE_EP3: fix item query extension",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-fix-email-in-tests",
+            "name": "PRE_EP3: fix email in tests",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-add-isme-tests",
+            "name": "PRE_EP3: add isMe tests",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-install-foundry",
+            "name": "PRE_EP3: install Foundry",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-generate-factories",
+            "name": "PRE_EP3: generate factories",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-make-test-encoding-faster",
+            "name": "PRE_EP3: make test encoding faster",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-fill-in-factories",
+            "name": "PRE_EP3: fill in factories",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-use-foundry-in-tests",
+            "name": "PRE_EP3: use Foundry in tests",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-foundry-in-fixtures",
+            "name": "PRE_EP3: Foundry in fixtures",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-replace-alice-with-foundry",
+            "name": "PRE_EP3: replace alice with Foundry",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-add-cheesenotification-entity",
+            "name": "PRE_EP3: add CheeseNotification entity",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-factory-for-cheesenotification",
+            "name": "PRE_EP3: factory for CheeseNotification",
+            "description": null
+        },
+        {
+            "id": "pre-ep3-adding-tutorial-fake-stats",
+            "name": "PRE_EP3: adding tutorial fake stats",
+            "description": null
+        },
+        {
+            "id": "persisterdecoration-comment-out-persist",
+            "name": "PersisterDecoration: comment out persist",
+            "description": null
+        },
+        {
+            "id": "persisterdecoration-re-add",
+            "name": "PersisterDecoration: re-add",
+            "description": null
+        },
+        {
+            "id": "delete-me-1",
+            "name": "delete me 1",
+            "description": null
+        },
+        {
+            "id": "persisterdecoration-inject-decorated",
+            "name": "PersisterDecoration: inject decorated",
+            "description": null
+        },
+        {
+            "id": "persisterdecoration-add-service-config",
+            "name": "PersisterDecoration: add service config",
+            "description": null
+        },
+        {
+            "id": "persisterdecoration-log-on-user-create",
+            "name": "PersisterDecoration: log on user create",
+            "description": null
+        },
+        {
+            "id": "persisterdecoration-add-context-interface",
+            "name": "PersisterDecoration: add context interface",
+            "description": null
+        },
+        {
+            "id": "persisterdecoration-dd-context",
+            "name": "PersisterDecoration: dd($context)",
+            "description": null
+        },
+        {
+            "id": "persisterdecoration-remove-dd",
+            "name": "PersisterDecoration: remove dd",
+            "description": null
+        },
+        {
+            "id": "statechangetest-bootstrap-test",
+            "name": "StateChangeTest: bootstrap test",
+            "description": null
+        },
+        {
+            "id": "statechangetest-expose-ispublished-for-write",
+            "name": "StateChangeTest: expose isPublished for write",
+            "description": null
+        },
+        {
+            "id": "statechangetest-test-for-notification",
+            "name": "StateChangeTest: test for notification",
+            "description": null
+        },
+        {
+            "id": "statechangeaction-create-empty-persister",
+            "name": "StateChangeAction: create empty persister",
+            "description": null
+        },
+        {
+            "id": "statechangeaction-inject-decorated",
+            "name": "StateChangeAction: inject decorated",
+            "description": null
+        },
+        {
+            "id": "statechangeaction-call-decorated",
+            "name": "StateChangeAction: call decorated",
+            "description": null
+        },
+        {
+            "id": "statechangeaction-add-phpdoc",
+            "name": "StateChangeAction: add phpdoc",
+            "description": null
+        },
+        {
+            "id": "statechangeaction-check-if-ispublished",
+            "name": "StateChangeAction: check if isPublished",
+            "description": null
+        },
+        {
+            "id": "statechangeaction-get-original-data",
+            "name": "StateChangeAction: get original data",
+            "description": null
+        },
+        {
+            "id": "statechangeaction-insert-notification",
+            "name": "StateChangeAction: insert notification",
+            "description": null
+        },
+        {
+            "id": "statechangeaction-check-originaldata",
+            "name": "StateChangeAction: check originalData",
+            "description": null
+        },
+        {
+            "id": "delete-me-5",
+            "name": "delete me 5",
+            "description": null
+        },
+        {
+            "id": "statevalidation-add-long-text",
+            "name": "StateValidation: add long text",
+            "description": null
+        },
+        {
+            "id": "statevalidation-add-test",
+            "name": "StateValidation: add test",
+            "description": null
+        },
+        {
+            "id": "statevalidation-generate-validator",
+            "name": "StateValidation: generate validator",
+            "description": null
+        },
+        {
+            "id": "statevalidation-add-constraint",
+            "name": "StateValidation: add constraint",
+            "description": null
+        },
+        {
+            "id": "statevalidation-allow-on-class",
+            "name": "StateValidation: allow on class",
+            "description": null
+        },
+        {
+            "id": "statevalidation-dump-in-validator",
+            "name": "StateValidation: dump in validator",
+            "description": null
+        },
+        {
+            "id": "statevalidation-dump-original-data",
+            "name": "StateValidation: dump original data",
+            "description": null
+        },
+        {
+            "id": "statevalidation-do-nothing-if-no-change",
+            "name": "StateValidation: do nothing if no change",
+            "description": null
+        },
+        {
+            "id": "statevalidation-do-not-allow-short-description",
+            "name": "StateValidation: do not allow short description",
+            "description": null
+        },
+        {
+            "id": "statevalidation-allow-admins-to-publish",
+            "name": "StateValidation: allow admins to publish",
+            "description": null
+        },
+        {
+            "id": "statevalidation-add-unpublish-logic",
+            "name": "StateValidation: add unpublish logic",
+            "description": null
+        },
+        {
+            "id": "statevalidation-show-accessdeniedexception",
+            "name": "StateValidation: show AccessDeniedException",
+            "description": null
+        },
+        {
+            "id": "statevalidation-comment-out-access-denied",
+            "name": "StateValidation: comment out access denied",
+            "description": null
+        },
+        {
+            "id": "delete-me-3",
+            "name": "delete me 3",
+            "description": null
+        },
+        {
+            "id": "userisme-remove-in-normalizer",
+            "name": "UserIsMe: remove in normalizer",
+            "description": null
+        },
+        {
+            "id": "userisme-empty-data-provider",
+            "name": "UserIsMe: empty data provider",
+            "description": null
+        },
+        {
+            "id": "userisme-fill-in-supports",
+            "name": "UserIsMe: fill in supports()",
+            "description": null
+        },
+        {
+            "id": "userisme-return-all-users",
+            "name": "UserIsMe: return all Users",
+            "description": null
+        },
+        {
+            "id": "userisme-decorate-collection-provider",
+            "name": "UserIsMe: decorate collection provider",
+            "description": null
+        },
+        {
+            "id": "userisme-inject-specific-provider",
+            "name": "UserIsMe: inject specific provider",
+            "description": null
+        },
+        {
+            "id": "userisme-add-isme-field",
+            "name": "UserIsMe: add isMe field",
+            "description": null
+        },
+        {
+            "id": "userisme-add-phpdoc",
+            "name": "UserIsMe: add phpdoc",
+            "description": null
+        },
+        {
+            "id": "userisme-exception-if-not-initialized",
+            "name": "UserIsMe: exception if not initialized",
+            "description": null
+        },
+        {
+            "id": "userisme-dump-users",
+            "name": "UserIsMe: dump $users",
+            "description": null
+        },
+        {
+            "id": "userisme-populate-the-field",
+            "name": "UserIsMe: populate the field",
+            "description": null
+        },
+        {
+            "id": "userisme-populate-correctly",
+            "name": "UserIsMe: populate correctly",
+            "description": null
+        },
+        {
+            "id": "userisme-add-response-status-code-check",
+            "name": "UserIsMe: add response status code check",
+            "description": null
+        },
+        {
+            "id": "userisme-add-item-provider-interface",
+            "name": "UserIsMe: add item provider interface",
+            "description": null
+        },
+        {
+            "id": "userisme-decorate-core-provider",
+            "name": "UserIsMe: decorate core provider",
+            "description": null
+        },
+        {
+            "id": "userisme-populate-isme-in-item",
+            "name": "UserIsMe: populate isMe in item",
+            "description": null
+        },
+        {
+            "id": "delete-me-7",
+            "name": "delete me 7",
+            "description": null
+        },
+        {
+            "id": "userisme-populate-isme-in-data-persister",
+            "name": "UserIsMe: populate isMe in data persister",
+            "description": null
+        },
+        {
+            "id": "ismelistener-comment-out-other-code",
+            "name": "IsMeListener: comment-out other code",
+            "description": null
+        },
+        {
+            "id": "ismelistener-add-event-subscriber",
+            "name": "IsMeListener: Add Event Subscriber",
+            "description": null
+        },
+        {
+            "id": "ismelistener-add-logic",
+            "name": "IsMeListener: add logic",
+            "description": null
+        },
+        {
+            "id": "ismelistener-default-isme-to-false",
+            "name": "IsMeListener: default isMe to false",
+            "description": null
+        },
+        {
+            "id": "ismelistener-dd-data-attributes",
+            "name": "IsMeListener: dd data attributes",
+            "description": null
+        },
+        {
+            "id": "ismelistener-remove-dd",
+            "name": "IsMeListener: remove dd",
+            "description": null
+        },
+        {
+            "id": "ismvplistener-add-field",
+            "name": "IsMvpListener: add field",
+            "description": null
+        },
+        {
+            "id": "ismvplistener-rename-method",
+            "name": "IsMvpListener: rename method",
+            "description": null
+        },
+        {
+            "id": "ismvplistener-update-test",
+            "name": "IsMvpListener: update test",
+            "description": null
+        },
+        {
+            "id": "ismvplistener-add-listener",
+            "name": "IsMvpListener: add listener",
+            "description": null
+        },
+        {
+            "id": "ismelistener-configure-lsitener",
+            "name": "IsMeListener: configure lsitener",
+            "description": null
+        },
+        {
+            "id": "customresource-create-dailystats",
+            "name": "CustomResource: Create DailyStats",
+            "description": null
+        },
+        {
+            "id": "customresource-customize-shortname",
+            "name": "CustomResource: customize shortName",
+            "description": null
+        },
+        {
+            "id": "customresource-customize-namer-instead",
+            "name": "CustomResource: customize namer instead",
+            "description": null
+        },
+        {
+            "id": "customresource-only-get-collection-op",
+            "name": "CustomResource: only get collection op",
+            "description": null
+        },
+        {
+            "id": "customresource-empty-data-provider",
+            "name": "CustomResource: empty data provider",
+            "description": null
+        },
+        {
+            "id": "customresource-return-dummy-dailystats",
+            "name": "CustomResource: return dummy DailyStats",
+            "description": null
+        },
+        {
+            "id": "customresource-add-item-with-404",
+            "name": "CustomResource: add item with 404",
+            "description": null
+        },
+        {
+            "id": "customresource-set-identifier-to-date",
+            "name": "CustomResource: set identifier to date",
+            "description": null
+        },
+        {
+            "id": "customresource-add-getter-for-identifier",
+            "name": "CustomResource: add getter for identifier",
+            "description": null
+        },
+        {
+            "id": "customresource-add-normalization-groups",
+            "name": "CustomResource: add normalization groups",
+            "description": null
+        },
+        {
+            "id": "customresource-add-constructor",
+            "name": "CustomResource: add constructor",
+            "description": null
+        },
+        {
+            "id": "customresource-description-on-prop",
+            "name": "CustomResource: Description on prop",
+            "description": null
+        },
+        {
+            "id": "embeddednormalization-return-2-stats",
+            "name": "EmbeddedNormalization: return 2 stats",
+            "description": null
+        },
+        {
+            "id": "embeddednormalization-return-some-listings",
+            "name": "EmbeddedNormalization: return some listings",
+            "description": null
+        },
+        {
+            "id": "embeddednormalization-redo-listing-docs",
+            "name": "EmbeddedNormalization: redo listing docs",
+            "description": null
+        },
+        {
+            "id": "embeddednormalization-help-my-editor",
+            "name": "EmbeddedNormalization: help my editor",
+            "description": null
+        },
+        {
+            "id": "embeddednormalization-output-2x-cl-fields-on-user",
+            "name": "EmbeddedNormalization: output 2x CL fields on User",
+            "description": null
+        },
+        {
+            "id": "embeddednormalization-advertise-return-type",
+            "name": "EmbeddedNormalization: advertise return type",
+            "description": null
+        },
+        {
+            "id": "embeddednormalization-with-readablelink",
+            "name": "EmbeddedNormalization: with readableLink",
+            "description": null
+        },
+        {
+            "id": "embeddednormalization-undo-everything",
+            "name": "EmbeddedNormalization: undo everything",
+            "description": null
+        },
+        {
+            "id": "customitem-reactivate-get-item",
+            "name": "CustomItem: reactivate get item",
+            "description": null
+        },
+        {
+            "id": "customitem-add-item-provider-interface",
+            "name": "CustomItem: add item provider interface",
+            "description": null
+        },
+        {
+            "id": "customitem-refactor-provider",
+            "name": "CustomItem: refactor provider",
+            "description": null
+        },
+        {
+            "id": "customitem-dump-id",
+            "name": "CustomItem: dump id",
+            "description": null
+        },
+        {
+            "id": "customitem-finish-getitem",
+            "name": "CustomItem: finish getItem()",
+            "description": null
+        },
+        {
+            "id": "pagination-create-dailystatspaginator",
+            "name": "Pagination: create DailyStatsPaginator",
+            "description": null
+        },
+        {
+            "id": "pagination-fill-in-dummy-values",
+            "name": "Pagination: fill in dummy values",
+            "description": null
+        },
+        {
+            "id": "pagination-return-paginator-object",
+            "name": "Pagination: return paginator object",
+            "description": null
+        },
+        {
+            "id": "pagination-make-it-iterable",
+            "name": "Pagination: make it iterable",
+            "description": null
+        },
+        {
+            "id": "pagination-update-count",
+            "name": "Pagination: update count()",
+            "description": null
+        },
+        {
+            "id": "pagination-move-stats-loading-logic",
+            "name": "Pagination: move stats loading logic",
+            "description": null
+        },
+        {
+            "id": "pagination-pass-current-max-per-page",
+            "name": "Pagination: pass current & max per page",
+            "description": null
+        },
+        {
+            "id": "pagination-use-limit-offset-in-results",
+            "name": "Pagination: use limit\/offset in results",
+            "description": null
+        },
+        {
+            "id": "pagination-pass-in-arguments",
+            "name": "Pagination: pass in arguments",
+            "description": null
+        },
+        {
+            "id": "pagination-inject-pagination-object",
+            "name": "Pagination: Inject Pagination object",
+            "description": null
+        },
+        {
+            "id": "pagination-limit-to-7-per-page",
+            "name": "Pagination: limit to 7 per page",
+            "description": null
+        },
+        {
+            "id": "customput-add-put-operation",
+            "name": "CustomPut: add put operation",
+            "description": null
+        },
+        {
+            "id": "customput-add-empty-data-persister",
+            "name": "CustomPut: add empty data persister",
+            "description": null
+        },
+        {
+            "id": "customput-fill-in-supports",
+            "name": "CustomPut: fill in supports()",
+            "description": null
+        },
+        {
+            "id": "customput-log-in-persist",
+            "name": "CustomPut: log in persist",
+            "description": null
+        },
+        {
+            "id": "entityfilter-add-cheesesearchfilter",
+            "name": "EntityFilter: Add CheeseSearchFilter",
+            "description": null
+        },
+        {
+            "id": "entityfilter-dump-in-getdescription",
+            "name": "EntityFilter: dump in getDescription()",
+            "description": null
+        },
+        {
+            "id": "entityfilter-add-properties-option",
+            "name": "EntityFilter: add properties option",
+            "description": null
+        },
+        {
+            "id": "entityfilter-remove-or",
+            "name": "EntityFilter: remove or",
+            "description": null
+        },
+        {
+            "id": "entityfilter-add-documentation",
+            "name": "EntityFilter: add documentation",
+            "description": null
+        },
+        {
+            "id": "entityfilter-add-openapi-description",
+            "name": "EntityFilter: add openapi description",
+            "description": null
+        },
+        {
+            "id": "entityfilter-dump-property-and-value",
+            "name": "EntityFilter: dump property and value",
+            "description": null
+        },
+        {
+            "id": "entityfilter-add-like-query",
+            "name": "EntityFilter: add LIKE query",
+            "description": null
+        },
+        {
+            "id": "entityfilter-use-query-name-generator",
+            "name": "EntityFilter: use query name generator",
+            "description": null
+        },
+        {
+            "id": "dtofilter-add-filter-class",
+            "name": "DTOFilter: add filter class",
+            "description": null
+        },
+        {
+            "id": "dtofilter-fill-in-getdescription",
+            "name": "DTOFilter: fill in getDescription",
+            "description": null
+        },
+        {
+            "id": "dtofilter-add-from-support-to-paginator",
+            "name": "DTOFilter: add from support to paginator",
+            "description": null
+        },
+        {
+            "id": "dtofilter-pass-in-hardcoded-from",
+            "name": "DTOFilter: pass in hardcoded from",
+            "description": null
+        },
+        {
+            "id": "dtofilter-dd-in-apply",
+            "name": "DTOFilter: dd() in apply()",
+            "description": null
+        },
+        {
+            "id": "dtofilter-dump-from-query-param",
+            "name": "DTOFilter: dump from query param",
+            "description": null
+        },
+        {
+            "id": "dtofilter-set-date-on-context",
+            "name": "DTOFilter: set date on context",
+            "description": null
+        },
+        {
+            "id": "dtofilter-add-context-aware-to-provider",
+            "name": "DTOFilter: add context aware to provider",
+            "description": null
+        },
+        {
+            "id": "dtofilter-set-from-in-data-provider",
+            "name": "DTOFilter: set from in data provider",
+            "description": null
+        },
+        {
+            "id": "delete-me-6",
+            "name": "delete me 6",
+            "description": null
+        },
+        {
+            "id": "delete-me-8",
+            "name": "delete me 8",
+            "description": null
+        },
+        {
+            "id": "delete-me-9",
+            "name": "delete me 9",
+            "description": null
+        },
+        {
+            "id": "delete-me-10",
+            "name": "delete me 10",
+            "description": null
+        },
+        {
+            "id": "dtofilter-return-400-error",
+            "name": "DTOFilter: return 400 error",
+            "description": null
+        },
+        {
+            "id": "dtooption-pass-throwoninvalid",
+            "name": "DTOOption: pass throwOnInvalid",
+            "description": null
+        },
+        {
+            "id": "dtooption-add-throwoninvalid",
+            "name": "DTOOption: add $throwOnInvalid",
+            "description": null
+        },
+        {
+            "id": "dtooption-inject-logger",
+            "name": "DTOOption: inject logger",
+            "description": null
+        },
+        {
+            "id": "entityfilteroption-add-uselike-argument",
+            "name": "EntityFilterOption: add useLike argument",
+            "description": null
+        },
+        {
+            "id": "entityfilteroption-override-constructor",
+            "name": "EntityFilterOption: override constructor",
+            "description": null
+        },
+        {
+            "id": "entityfilteroption-simplify-constructor",
+            "name": "EntityFilterOption: simplify constructor",
+            "description": null
+        },
+        {
+            "id": "entityfilteroption-add-uselike",
+            "name": "EntityFilterOption: add useLike",
+            "description": null
+        },
+        {
+            "id": "dtooutput-create-basic-cheeselistingoutput",
+            "name": "DTOOutput: Create basic CheeseListingOutput",
+            "description": null
+        },
+        {
+            "id": "dtooutput-add-output",
+            "name": "DTOOutput: add output=",
+            "description": null
+        },
+        {
+            "id": "dtooutput-add-empty-transformer",
+            "name": "DTOOutput: add empty transformer",
+            "description": null
+        },
+        {
+            "id": "dtooutput-dd-in-supports",
+            "name": "DTOOutput: dd() in supports",
+            "description": null
+        },
+        {
+            "id": "dtooutput-add-supports",
+            "name": "DTOOutput: add supports()",
+            "description": null
+        },
+        {
+            "id": "dtooutput-basic-transform",
+            "name": "DTOOutput: basic transform()",
+            "description": null
+        },
+        {
+            "id": "dtooutput-give-field-groups",
+            "name": "DTOOutput: give field @Groups",
+            "description": null
+        },
+        {
+            "id": "dtooutput-add-string-field-type",
+            "name": "DTOOutput: add string field type",
+            "description": null
+        },
+        {
+            "id": "dtooutput-move-to-var",
+            "name": "DTOOutput: move to @var",
+            "description": null
+        },
+        {
+            "id": "dtooutput-add-more-fields",
+            "name": "DTOOutput: add more fields",
+            "description": null
+        },
+        {
+            "id": "dtooutput-copy-exposed-getter",
+            "name": "DTOOutput: copy exposed getter",
+            "description": null
+        },
+        {
+            "id": "dtooutput-copy-other-method",
+            "name": "DTOOutput: copy other method",
+            "description": null
+        },
+        {
+            "id": "dtooutput-add-createdat-field",
+            "name": "DTOOutput: add createdAt field",
+            "description": null
+        },
+        {
+            "id": "dtoownerprop-add-owner",
+            "name": "DTOOwnerProp: add owner",
+            "description": null
+        },
+        {
+            "id": "dtoownerprop-fix-usernormalizer",
+            "name": "DTOOwnerProp: fix UserNormalizer",
+            "description": null
+        },
+        {
+            "id": "dtoownerprop-fix-test",
+            "name": "DTOOwnerProp: fix test",
+            "description": null
+        },
+        {
+            "id": "dtonormalizeissue-add-readablelink",
+            "name": "DTONormalizeIssue: add readableLink",
+            "description": null
+        },
+        {
+            "id": "dtonormalizeissue-remove-readablelink",
+            "name": "DTONormalizeIssue: remove readableLink",
+            "description": null
+        },
+        {
+            "id": "dtonormalizeissue-add-user-read-groups",
+            "name": "DTONormalizeIssue: add user:read groups",
+            "description": null
+        },
+        {
+            "id": "dtonormalizeissue-remove-extra-groups",
+            "name": "DTONormalizeIssue: remove extra groups",
+            "description": null
+        },
+        {
+            "id": "dtonormalizeissue-re-add-readablelink",
+            "name": "DTONormalizeIssue: re-add readableLink",
+            "description": null
+        },
+        {
+            "id": "dtoinput-create-class-with-props",
+            "name": "DTOInput: create class with props",
+            "description": null
+        },
+        {
+            "id": "dtoinput-add-class",
+            "name": "DTOInput: add class=",
+            "description": null
+        },
+        {
+            "id": "dtoinput-empty-transformer",
+            "name": "DTOInput: empty transformer",
+            "description": null
+        },
+        {
+            "id": "dtoinput-dump-arguments",
+            "name": "DTOInput: dump arguments",
+            "description": null
+        },
+        {
+            "id": "dtoinput-install-debug",
+            "name": "DTOInput: install debug",
+            "description": null
+        },
+        {
+            "id": "dtoinput-fill-in-supports",
+            "name": "DTOInput: fill in supports()",
+            "description": null
+        },
+        {
+            "id": "dtoinput-add-phpdoc",
+            "name": "DTOInput: add phpdoc",
+            "description": null
+        },
+        {
+            "id": "dtoinput-add-var-user",
+            "name": "DTOInput: add @var User",
+            "description": null
+        },
+        {
+            "id": "dtoinput-add-var-for-other-props",
+            "name": "DTOInput: add @var for other props",
+            "description": null
+        },
+        {
+            "id": "dtoinput-complete-transform",
+            "name": "DTOInput: complete transform()",
+            "description": null
+        },
+        {
+            "id": "dtoinput-make-it-work-for-updates",
+            "name": "DTOInput: make it work for updates",
+            "description": null
+        },
+        {
+            "id": "dtoupdate-empty-denormalizer",
+            "name": "DTOUpdate: empty denormalizer",
+            "description": null
+        },
+        {
+            "id": "dtoupdate-fill-in-supports",
+            "name": "DTOUpdate: fill in supports()",
+            "description": null
+        },
+        {
+            "id": "dtoupdate-add-basic-dto-object-to-context",
+            "name": "DTOUpdate: add basic DTO object to context",
+            "description": null
+        },
+        {
+            "id": "dtoupdate-inject-objectnormalizer",
+            "name": "DTOUpdate: inject ObjectNormalizer",
+            "description": null
+        },
+        {
+            "id": "dtoupdate-remove-dump",
+            "name": "DTOUpdate: remove dump",
+            "description": null
+        },
+        {
+            "id": "dtoupdate-paste-in-private-function",
+            "name": "DTOUpdate: paste in private function",
+            "description": null
+        },
+        {
+            "id": "dtoupdate-use-private-method",
+            "name": "DTOUpdate: use private method",
+            "description": null
+        },
+        {
+            "id": "dtoorg-add-input-createorupdateentity",
+            "name": "DTOOrg: Add Input::createOrUpdateEntity()",
+            "description": null
+        },
+        {
+            "id": "dtoorg-add-input-createfromentity",
+            "name": "DTOOrg: Add Input::createFromEntity()",
+            "description": null
+        },
+        {
+            "id": "dtoorg-add-createfrominputdto",
+            "name": "DTOOrg: Add createFromInputDto",
+            "description": null
+        },
+        {
+            "id": "validation-cast-to-avoid-errors",
+            "name": "Validation: cast to avoid errors",
+            "description": null
+        },
+        {
+            "id": "validation-undo-casting",
+            "name": "Validation: undo casting",
+            "description": null
+        },
+        {
+            "id": "validation-move-constraints-to-input",
+            "name": "Validation: move constraints to Input",
+            "description": null
+        },
+        {
+            "id": "validation-inject-validate",
+            "name": "Validation: inject & validate",
+            "description": null
+        },
+        {
+            "id": "uuid-install-ramsey-uuid-doctrine",
+            "name": "UUID: install ramsey\/uuid-doctrine",
+            "description": null
+        },
+        {
+            "id": "uuid-add-uuid-field",
+            "name": "UUID: add uuid field",
+            "description": null
+        },
+        {
+            "id": "uuid-make-migration-safe",
+            "name": "UUID: make migration safe",
+            "description": null
+        },
+        {
+            "id": "uuid-make-not-null",
+            "name": "UUID: make not null",
+            "description": null
+        },
+        {
+            "id": "uuid-initialize-in-the-constructor",
+            "name": "UUID: initialize in the constructor",
+            "description": null
+        },
+        {
+            "id": "uuid-fetch-user-in-test",
+            "name": "UUID: fetch User in test",
+            "description": null
+        },
+        {
+            "id": "uuid-check-for-uuid-in-test",
+            "name": "UUID: check for uuid in test",
+            "description": null
+        },
+        {
+            "id": "uuid-change-identifier",
+            "name": "UUID: change identifier",
+            "description": null
+        },
+        {
+            "id": "uuid-use-uuid-in-all-tests",
+            "name": "UUID: use UUID in all tests",
+            "description": null
+        },
+        {
+            "id": "uuid-add-test-to-set-on-create",
+            "name": "UUID: add test to set on CREATE",
+            "description": null
+        },
+        {
+            "id": "uuid-expose-uuid-in-constructor",
+            "name": "UUID: expose uuid in constructor",
+            "description": null
+        },
+        {
+            "id": "uuid-rename-to-id",
+            "name": "UUID: rename to id",
+            "description": null
+        },
+        {
+            "id": "uuid-send-json-ld-content-type",
+            "name": "UUID: send json-ld Content-Type",
+            "description": null
+        },
+        {
+            "id": "uuid-remove-header",
+            "name": "UUID: remove header",
+            "description": null
+        },
+        {
+            "id": "uuid-remove-json-format",
+            "name": "UUID: remove json format",
+            "description": null
+        },
+        {
+            "id": "uuid-re-add-json-format",
+            "name": "UUID: re-add json format",
+            "description": null
         }
     ],
-    "sha": "66a78ee9e3f7672fa7a64afa70c8781f566615df"
+    "sha": "28e61f2c4aaccfca6a78a4f821c60369e0ac06f9"
 }

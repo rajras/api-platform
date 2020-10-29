@@ -1,0 +1,41 @@
+diff --git a/src/DataPersister/UserDataPersister.php b/src/DataPersister/UserDataPersister.php
+index 953e68a2b..95e3758b8 100644
+--- a/src/DataPersister/UserDataPersister.php
++++ b/src/DataPersister/UserDataPersister.php
+@@ -4,17 +4,16 @@ namespace App\DataPersister;
+ 
+ use ApiPlatform\Core\DataPersister\DataPersisterInterface;
+ use App\Entity\User;
+-use Doctrine\ORM\EntityManagerInterface;
+ use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
+ 
+ class UserDataPersister implements DataPersisterInterface
+ {
+-    private $entityManager;
++    private $decoratedDataPersister;
+     private $userPasswordEncoder;
+ 
+-    public function __construct(EntityManagerInterface $entityManager, UserPasswordEncoderInterface $userPasswordEncoder)
++    public function __construct(DataPersisterInterface $decoratedDataPersister, UserPasswordEncoderInterface $userPasswordEncoder)
+     {
+-        $this->entityManager = $entityManager;
++        $this->decoratedDataPersister = $decoratedDataPersister;
+         $this->userPasswordEncoder = $userPasswordEncoder;
+     }
+ 
+@@ -35,13 +34,11 @@ class UserDataPersister implements DataPersisterInterface
+             $data->eraseCredentials();
+         }
+ 
+-        $this->entityManager->persist($data);
+-        $this->entityManager->flush();
++        return $this->decoratedDataPersister->persist($data);
+     }
+ 
+     public function remove($data)
+     {
+-        $this->entityManager->remove($data);
+-        $this->entityManager->flush();
++        $this->decoratedDataPersister->remove($data);
+     }
+ }

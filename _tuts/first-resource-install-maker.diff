@@ -1,10 +1,10 @@
 diff --git a/composer.json b/composer.json
-index d8e99d9..57f616b 100644
+index d34166f5f..ca3ee685a 100644
 --- a/composer.json
 +++ b/composer.json
-@@ -59,5 +59,8 @@
+@@ -60,5 +60,8 @@
              "allow-contrib": false,
-             "require": "4.2.*"
+             "require": "4.2.*|4.3.*"
          }
 +    },
 +    "require-dev": {
@@ -12,19 +12,19 @@ index d8e99d9..57f616b 100644
      }
  }
 diff --git a/composer.lock b/composer.lock
-index 553e03c..a413c13 100644
+index b1bf4c5d1..0e70cf992 100644
 --- a/composer.lock
 +++ b/composer.lock
 @@ -4,7 +4,7 @@
          "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
          "This file is @generated automatically"
      ],
--    "content-hash": "673f3407be5950239d4b8021667a5d0e",
-+    "content-hash": "4cf99d7d20b310c2c7238898845019a6",
+-    "content-hash": "0db3843a5b982650c9d3a5392fbfc2c7",
++    "content-hash": "d34362c9675ecdee5e4585eec0819392",
      "packages": [
          {
              "name": "api-platform/api-pack",
-@@ -4496,7 +4496,125 @@
+@@ -4661,7 +4661,125 @@
              "time": "2017-05-14T17:21:12+00:00"
          }
      ],
@@ -152,7 +152,7 @@ index 553e03c..a413c13 100644
      "minimum-stability": "stable",
      "stability-flags": [],
 diff --git a/config/bundles.php b/config/bundles.php
-index 1edaed6..b55f43b 100644
+index 1edaed6d0..b55f43b2a 100644
 --- a/config/bundles.php
 +++ b/config/bundles.php
 @@ -8,4 +8,5 @@ return [
@@ -162,7 +162,7 @@ index 1edaed6..b55f43b 100644
 +    Symfony\Bundle\MakerBundle\MakerBundle::class => ['dev' => true],
  ];
 diff --git a/symfony.lock b/symfony.lock
-index 1b596b4..d5221a1 100644
+index 50b24c634..4b3f7af7b 100644
 --- a/symfony.lock
 +++ b/symfony.lock
 @@ -97,6 +97,9 @@
@@ -172,10 +172,10 @@ index 1b596b4..d5221a1 100644
 +    "nikic/php-parser": {
 +        "version": "v4.2.1"
 +    },
-     "phpdocumentor/reflection-common": {
-         "version": "1.0.1"
+     "ocramius/package-versions": {
+         "version": "1.4.2"
      },
-@@ -210,6 +213,15 @@
+@@ -219,6 +222,15 @@
      "symfony/inflector": {
          "version": "v4.2.8"
      },
@@ -188,6 +188,6 @@ index 1b596b4..d5221a1 100644
 +            "ref": "fadbfe33303a76e25cb63401050439aa9b1a9c7f"
 +        }
 +    },
-     "symfony/polyfill-mbstring": {
-         "version": "v1.11.0"
+     "symfony/mime": {
+         "version": "v4.3.1"
      },

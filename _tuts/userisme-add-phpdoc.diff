@@ -1,0 +1,13 @@
+diff --git a/src/Entity/User.php b/src/Entity/User.php
+index 5386af01c..6365ea0dd 100644
+--- a/src/Entity/User.php
++++ b/src/Entity/User.php
+@@ -94,6 +94,8 @@ class User implements UserInterface
+     private $phoneNumber;
+ 
+     /**
++     * Returns true if this is the currently-authenticated user
++     *
+      * @Groups({"user:read"})
+      */
+     private $isMe;

@@ -1,0 +1,26 @@
+diff --git a/tests/Functional/UserResourceTest.php b/tests/Functional/UserResourceTest.php
+index a802fc41b..af23a6073 100644
+--- a/tests/Functional/UserResourceTest.php
++++ b/tests/Functional/UserResourceTest.php
+@@ -65,6 +65,9 @@ class UserResourceTest extends CustomApiTestCase
+ 
+         $data = $client->getResponse()->toArray();
+         $this->assertArrayNotHasKey('phoneNumber', $data);
++        $this->assertJsonContains([
++            'isMe' => false,
++        ]);
+ 
+         // refresh the user & elevate
+         $user = $em->getRepository(User::class)->find($user->getId());
+@@ -74,7 +77,8 @@ class UserResourceTest extends CustomApiTestCase
+ 
+         $client->request('GET', '/api/users/'.$user->getId());
+         $this->assertJsonContains([
+-            'phoneNumber' => '555.123.4567'
++            'phoneNumber' => '555.123.4567',
++            'isMe' => true,
+         ]);
+     }
+-}
+\ No newline at end of file
++}

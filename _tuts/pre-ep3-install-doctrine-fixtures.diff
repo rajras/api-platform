@@ -1,0 +1,287 @@
+diff --git a/composer.json b/composer.json
+index 364abd272..71222bc2e 100644
+--- a/composer.json
++++ b/composer.json
+@@ -29,6 +29,7 @@
+         "symfony/yaml": "5.1.*"
+     },
+     "require-dev": {
++        "doctrine/doctrine-fixtures-bundle": "^3.3",
+         "hautelook/alice-bundle": "^2.5",
+         "symfony/browser-kit": "5.1.*",
+         "symfony/css-selector": "5.1.*",
+diff --git a/composer.lock b/composer.lock
+index d2eac96dd..fe0005bcf 100644
+--- a/composer.lock
++++ b/composer.lock
+@@ -4,7 +4,7 @@
+         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+         "This file is @generated automatically"
+     ],
+-    "content-hash": "4d4989805cdbb89c35c55b78a5f6adf3",
++    "content-hash": "d7281dcf07a52520100e0986c3c912ce",
+     "packages": [
+         {
+             "name": "api-platform/core",
+@@ -2865,16 +2865,16 @@
+         },
+         {
+             "name": "symfony/deprecation-contracts",
+-            "version": "v2.1.3",
++            "version": "v2.2.0",
+             "source": {
+                 "type": "git",
+                 "url": "https://github.com/symfony/deprecation-contracts.git",
+-                "reference": "5e20b83385a77593259c9f8beb2c43cd03b2ac14"
++                "reference": "5fa56b4074d1ae755beb55617ddafe6f5d78f665"
+             },
+             "dist": {
+                 "type": "zip",
+-                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/5e20b83385a77593259c9f8beb2c43cd03b2ac14",
+-                "reference": "5e20b83385a77593259c9f8beb2c43cd03b2ac14",
++                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/5fa56b4074d1ae755beb55617ddafe6f5d78f665",
++                "reference": "5fa56b4074d1ae755beb55617ddafe6f5d78f665",
+                 "shasum": ""
+             },
+             "require": {
+@@ -2883,7 +2883,7 @@
+             "type": "library",
+             "extra": {
+                 "branch-alias": {
+-                    "dev-master": "2.1-dev"
++                    "dev-master": "2.2-dev"
+                 },
+                 "thanks": {
+                     "name": "symfony/contracts",
+@@ -2925,7 +2925,7 @@
+                     "type": "tidelift"
+                 }
+             ],
+-            "time": "2020-06-06T08:49:21+00:00"
++            "time": "2020-09-07T11:33:47+00:00"
+         },
+         {
+             "name": "symfony/doctrine-bridge",
+@@ -3272,16 +3272,16 @@
+         },
+         {
+             "name": "symfony/event-dispatcher-contracts",
+-            "version": "v2.1.3",
++            "version": "v2.2.0",
+             "source": {
+                 "type": "git",
+                 "url": "https://github.com/symfony/event-dispatcher-contracts.git",
+-                "reference": "f6f613d74cfc5a623fc36294d3451eb7fa5a042b"
++                "reference": "0ba7d54483095a198fa51781bc608d17e84dffa2"
+             },
+             "dist": {
+                 "type": "zip",
+-                "url": "https://api.github.com/repos/symfony/event-dispatcher-contracts/zipball/f6f613d74cfc5a623fc36294d3451eb7fa5a042b",
+-                "reference": "f6f613d74cfc5a623fc36294d3451eb7fa5a042b",
++                "url": "https://api.github.com/repos/symfony/event-dispatcher-contracts/zipball/0ba7d54483095a198fa51781bc608d17e84dffa2",
++                "reference": "0ba7d54483095a198fa51781bc608d17e84dffa2",
+                 "shasum": ""
+             },
+             "require": {
+@@ -3294,7 +3294,7 @@
+             "type": "library",
+             "extra": {
+                 "branch-alias": {
+-                    "dev-master": "2.1-dev"
++                    "dev-master": "2.2-dev"
+                 },
+                 "thanks": {
+                     "name": "symfony/contracts",
+@@ -3344,7 +3344,7 @@
+                     "type": "tidelift"
+                 }
+             ],
+-            "time": "2020-07-06T13:23:11+00:00"
++            "time": "2020-09-07T11:33:47+00:00"
+         },
+         {
+             "name": "symfony/expression-language",
+@@ -5492,16 +5492,16 @@
+         },
+         {
+             "name": "symfony/service-contracts",
+-            "version": "v2.1.3",
++            "version": "v2.2.0",
+             "source": {
+                 "type": "git",
+                 "url": "https://github.com/symfony/service-contracts.git",
+-                "reference": "58c7475e5457c5492c26cc740cc0ad7464be9442"
++                "reference": "d15da7ba4957ffb8f1747218be9e1a121fd298a1"
+             },
+             "dist": {
+                 "type": "zip",
+-                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/58c7475e5457c5492c26cc740cc0ad7464be9442",
+-                "reference": "58c7475e5457c5492c26cc740cc0ad7464be9442",
++                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/d15da7ba4957ffb8f1747218be9e1a121fd298a1",
++                "reference": "d15da7ba4957ffb8f1747218be9e1a121fd298a1",
+                 "shasum": ""
+             },
+             "require": {
+@@ -5514,7 +5514,7 @@
+             "type": "library",
+             "extra": {
+                 "branch-alias": {
+-                    "dev-master": "2.1-dev"
++                    "dev-master": "2.2-dev"
+                 },
+                 "thanks": {
+                     "name": "symfony/contracts",
+@@ -5564,7 +5564,7 @@
+                     "type": "tidelift"
+                 }
+             ],
+-            "time": "2020-07-06T13:23:11+00:00"
++            "time": "2020-09-07T11:33:47+00:00"
+         },
+         {
+             "name": "symfony/stopwatch",
+@@ -6947,6 +6947,88 @@
+             ],
+             "time": "2020-09-01T07:13:28+00:00"
+         },
++        {
++            "name": "doctrine/doctrine-fixtures-bundle",
++            "version": "3.3.2",
++            "source": {
++                "type": "git",
++                "url": "https://github.com/doctrine/DoctrineFixturesBundle.git",
++                "reference": "a2179f447425d9e784fb9bc224e533a0ab083b98"
++            },
++            "dist": {
++                "type": "zip",
++                "url": "https://api.github.com/repos/doctrine/DoctrineFixturesBundle/zipball/a2179f447425d9e784fb9bc224e533a0ab083b98",
++                "reference": "a2179f447425d9e784fb9bc224e533a0ab083b98",
++                "shasum": ""
++            },
++            "require": {
++                "doctrine/data-fixtures": "^1.3",
++                "doctrine/doctrine-bundle": "^1.11|^2.0",
++                "doctrine/orm": "^2.6.0",
++                "doctrine/persistence": "^1.3|^2.0",
++                "php": "^7.1 || ^8.0",
++                "symfony/config": "^3.4|^4.3|^5.0",
++                "symfony/console": "^3.4|^4.3|^5.0",
++                "symfony/dependency-injection": "^3.4|^4.3|^5.0",
++                "symfony/doctrine-bridge": "^3.4|^4.1|^5.0",
++                "symfony/http-kernel": "^3.4|^4.3|^5.0"
++            },
++            "require-dev": {
++                "doctrine/coding-standard": "^6.0",
++                "phpunit/phpunit": "^7.4 || ^9.2",
++                "symfony/phpunit-bridge": "^4.1|^5.0"
++            },
++            "type": "symfony-bundle",
++            "extra": {
++                "branch-alias": {
++                    "dev-master": "3.3.x-dev"
++                }
++            },
++            "autoload": {
++                "psr-4": {
++                    "Doctrine\\Bundle\\FixturesBundle\\": ""
++                }
++            },
++            "notification-url": "https://packagist.org/downloads/",
++            "license": [
++                "MIT"
++            ],
++            "authors": [
++                {
++                    "name": "Fabien Potencier",
++                    "email": "fabien@symfony.com"
++                },
++                {
++                    "name": "Doctrine Project",
++                    "homepage": "http://www.doctrine-project.org"
++                },
++                {
++                    "name": "Symfony Community",
++                    "homepage": "http://symfony.com/contributors"
++                }
++            ],
++            "description": "Symfony DoctrineFixturesBundle",
++            "homepage": "http://www.doctrine-project.org",
++            "keywords": [
++                "Fixture",
++                "persistence"
++            ],
++            "funding": [
++                {
++                    "url": "https://www.doctrine-project.org/sponsorship.html",
++                    "type": "custom"
++                },
++                {
++                    "url": "https://www.patreon.com/phpdoctrine",
++                    "type": "patreon"
++                },
++                {
++                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Fdoctrine-fixtures-bundle",
++                    "type": "tidelift"
++                }
++            ],
++            "time": "2020-09-01T07:06:14+00:00"
++        },
+         {
+             "name": "fzaninotto/faker",
+             "version": "v1.9.1",
+diff --git a/config/bundles.php b/config/bundles.php
+index 03399bd9b..1cbd4d830 100644
+--- a/config/bundles.php
++++ b/config/bundles.php
+@@ -15,4 +15,5 @@ return [
+     Fidry\AliceDataFixtures\Bridge\Symfony\FidryAliceDataFixturesBundle::class => ['dev' => true, 'test' => true],
+     Hautelook\AliceBundle\HautelookAliceBundle::class => ['dev' => true, 'test' => true],
+     Symfony\Bundle\MonologBundle\MonologBundle::class => ['all' => true],
++    Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle::class => ['dev' => true, 'test' => true],
+ ];
+diff --git a/src/DataFixtures/AppFixtures.php b/src/DataFixtures/AppFixtures.php
+new file mode 100644
+index 000000000..6c20526f4
+--- /dev/null
++++ b/src/DataFixtures/AppFixtures.php
+@@ -0,0 +1,17 @@
++<?php
++
++namespace App\DataFixtures;
++
++use Doctrine\Bundle\FixturesBundle\Fixture;
++use Doctrine\Persistence\ObjectManager;
++
++class AppFixtures extends Fixture
++{
++    public function load(ObjectManager $manager)
++    {
++        // $product = new Product();
++        // $manager->persist($product);
++
++        $manager->flush();
++    }
++}
+diff --git a/symfony.lock b/symfony.lock
+index 6820711cf..044f84f73 100644
+--- a/symfony.lock
++++ b/symfony.lock
+@@ -58,6 +58,18 @@
+             "src/Repository/.gitignore"
+         ]
+     },
++    "doctrine/doctrine-fixtures-bundle": {
++        "version": "3.0",
++        "recipe": {
++            "repo": "github.com/symfony/recipes",
++            "branch": "master",
++            "version": "3.0",
++            "ref": "e5b542d4ef47d8a003c91beb35650c76907f7e53"
++        },
++        "files": [
++            "src/DataFixtures/AppFixtures.php"
++        ]
++    },
+     "doctrine/doctrine-migrations-bundle": {
+         "version": "2.2",
+         "recipe": {

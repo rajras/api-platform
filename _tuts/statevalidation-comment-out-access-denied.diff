@@ -1,0 +1,13 @@
+diff --git a/src/Validator/ValidIsPublishedValidator.php b/src/Validator/ValidIsPublishedValidator.php
+index 77160e4cf..560f8fc07 100644
+--- a/src/Validator/ValidIsPublishedValidator.php
++++ b/src/Validator/ValidIsPublishedValidator.php
+@@ -55,7 +55,7 @@ class ValidIsPublishedValidator extends ConstraintValidator
+         // we are UNpublishing
+         if (!$this->security->isGranted('ROLE_ADMIN')) {
+             // you can return a 403
+-            throw new AccessDeniedException('Only admin users can unpublish');
++            //throw new AccessDeniedException('Only admin users can unpublish');
+ 
+             // or a normal validation error
+             $this->context->buildViolation('Only admin users can unpublish')

@@ -1,0 +1,12 @@
+diff --git a/src/DataTransformer/CheeseListingInputDataTransformer.php b/src/DataTransformer/CheeseListingInputDataTransformer.php
+index 21fab55fa..5f1d0d321 100644
+--- a/src/DataTransformer/CheeseListingInputDataTransformer.php
++++ b/src/DataTransformer/CheeseListingInputDataTransformer.php
+@@ -14,7 +14,6 @@ class CheeseListingInputDataTransformer implements DataTransformerInterface
+      */
+     public function transform($input, string $to, array $context = [])
+     {
+-        dump($input);
+         if (isset($context[AbstractItemNormalizer::OBJECT_TO_POPULATE])) {
+             $cheeseListing = $context[AbstractItemNormalizer::OBJECT_TO_POPULATE];
+         } else {

@@ -1,0 +1,13 @@
+diff --git a/src/DataPersister/UserDataPersister.php b/src/DataPersister/UserDataPersister.php
+index ae93043ab..58916fce2 100644
+--- a/src/DataPersister/UserDataPersister.php
++++ b/src/DataPersister/UserDataPersister.php
+@@ -31,6 +31,8 @@ class UserDataPersister implements ContextAwareDataPersisterInterface
+      */
+     public function persist($data, array $context = [])
+     {
++        dump($context);
++
+         if (!$data->getId()) {
+             // take any actions needed for a new user
+             // send registration email

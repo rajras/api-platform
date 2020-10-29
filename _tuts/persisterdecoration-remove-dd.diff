@@ -1,0 +1,15 @@
+diff --git a/src/DataPersister/UserDataPersister.php b/src/DataPersister/UserDataPersister.php
+index 58916fce2..f010e52dc 100644
+--- a/src/DataPersister/UserDataPersister.php
++++ b/src/DataPersister/UserDataPersister.php
+@@ -31,7 +31,9 @@ class UserDataPersister implements ContextAwareDataPersisterInterface
+      */
+     public function persist($data, array $context = [])
+     {
+-        dump($context);
++        if (($context['item_operation_name'] ?? null) === 'put') {
++            $this->logger->info(sprintf('User "%s" is being updated!', $data->getId()));
++        }
+ 
+         if (!$data->getId()) {
+             // take any actions needed for a new user

@@ -1,0 +1,38 @@
+diff --git a/src/DataPersister/UserDataPersister.php b/src/DataPersister/UserDataPersister.php
+index 8295a969f..e990f9670 100644
+--- a/src/DataPersister/UserDataPersister.php
++++ b/src/DataPersister/UserDataPersister.php
+@@ -52,7 +52,8 @@ class UserDataPersister implements ContextAwareDataPersisterInterface
+             $data->eraseCredentials();
+         }
+ 
+-        $data->setIsMe($this->security->getUser() === $data);
++        // now handled in a listener
++        //$data->setIsMe($this->security->getUser() === $data);
+ 
+         return $this->decoratedDataPersister->persist($data);
+     }
+diff --git a/src/DataProvider/UserDataProvider.php b/src/DataProvider/UserDataProvider.php
+index d4a425976..dad2e3a9b 100644
+--- a/src/DataProvider/UserDataProvider.php
++++ b/src/DataProvider/UserDataProvider.php
+@@ -30,7 +30,8 @@ class UserDataProvider implements ContextAwareCollectionDataProviderInterface, D
+ 
+         $currentUser = $this->security->getUser();
+         foreach ($users as $user) {
+-            $user->setIsMe($currentUser === $user);
++            // now handled in a listener
++            //$user->setIsMe($currentUser === $user);
+         }
+ 
+         return $users;
+@@ -45,7 +46,8 @@ class UserDataProvider implements ContextAwareCollectionDataProviderInterface, D
+             return null;
+         }
+ 
+-        $item->setIsMe($this->security->getUser() === $item);
++        // now handled in a listener
++        //$item->setIsMe($this->security->getUser() === $item);
+ 
+         return $item;
+     }
